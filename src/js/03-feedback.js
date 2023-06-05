@@ -25,6 +25,7 @@ function onFormInput() {
 function onFormSubmit(evt) {
     evt.preventDefault();
     if (JSON.parse(localStorage.getItem(keyLogin))) {
+        console.log(JSON.parse(localStorage.getItem(keyLogin)));
         localStorage.removeItem(keyLogin);
         form.reset();
         return;
